@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+  frontend:
+    build: .
+    container_name: vite-frontend-prod
+    restart: always
