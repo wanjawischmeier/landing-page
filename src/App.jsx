@@ -6,6 +6,7 @@ import GridView from "./widgets/GridView";
 import AboutUs from "./widgets/AboutUs";
 import cards from "./cards";
 import navLinks from "./navLinks";
+import "./tortoiseBackground.css";
 
 const ROOT_URL = "/";
 const APP_NAME = "aktivistek";
@@ -26,7 +27,7 @@ function App() {
 
   return (
     <Router>
-      <div className="flex flex-col h-screen w-screen overflow-hidden bg-dark-bg text-dark-text">
+      <div className="flex flex-col h-screen w-screen overflow-hidden svg-bg text-dark-text" >
         <Header
           navLinks={navLinks}
           rootUrl={ROOT_URL}
@@ -35,11 +36,12 @@ function App() {
           mode={mode}
         />
         <div className="flex flex-1 h-0">
-          <div className={mode === "mobile" ? (
-            "flex-1 flex items-center justify-center bg-dark-bg"
-          ) : (
-            "flex-1 flex items-center justify-center p-8 bg-dark-bg"
-          )}>
+          <div
+            className={mode === "mobile"
+              ? "flex-1 flex items-center justify-center"
+              : "flex-1 flex items-center justify-center p-8"
+            }
+          >
             <Routes>
               <Route
                 path="/"
@@ -69,6 +71,18 @@ function App() {
               />
               <Route path="*" element={<Navigate to="/" />} />
             </Routes>
+            {/* SVG background credit */}
+            <div className="absolute bottom-2 left-2 text-placeholder text-xs opacity-70 select-none pointer-events-auto">
+              <a
+                href="https://svgbackgrounds.com/"
+                className="underline"
+                target="_blank"
+                rel="noopener noreferrer"
+                tabIndex={0}
+              >
+                @svgbackgrounds.com
+              </a>
+            </div>
           </div>
           {/* Side panel only on desktop */}
           {mode === "desktop" && (
