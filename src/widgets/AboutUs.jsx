@@ -84,13 +84,24 @@ function AccordionSection({ title, content, expanded, onClick }) {
   );
 }
 
-export default function AboutUs() {
+export default function AboutUs({ mode }) {
   const [openIndex, setOpenIndex] = useState(0);
 
+  const isMobile = mode === "mobile";
+
   return (
-    <div className="bg-dark-grid shadow-2xl p-8 max-w-[80%] max-h-[80%] min-w-[400px] h-full flex flex-col">
+    <div
+      className={
+        isMobile
+          ? "bg-dark-grid h-full w-full flex flex-col p-6" // Fill all space, no padding or width constraints
+          : "bg-dark-grid shadow-2xl p-6 max-w-[80%] max-h-[80%] min-w-[400px] h-full flex flex-col"
+      }
+    >
       <h2 className="text-2xl font-bold mb-4 text-dark-text">Über uns</h2>
-      <div className="overflow-y-auto flex-1 pr-2" style={{ maxHeight: '60vh' }}>
+      <div
+        className={isMobile ? "overflow-y-auto flex-1" : "overflow-y-auto flex-1 pr-2"}
+        style={isMobile ? {} : { maxHeight: "60vh" }}
+      >
         {sections.map((section, idx) => (
           <AccordionSection
             key={section.title}

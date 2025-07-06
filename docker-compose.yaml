@@ -4,3 +4,9 @@ services:
     build: .
     container_name: vite-frontend-prod
     restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80" ]
+      interval: 2m
+      timeout: 10s
+      retries: 3
+      start_period: 30s

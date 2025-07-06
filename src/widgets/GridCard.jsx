@@ -22,7 +22,7 @@ export default function GridCard({ image, title, description, url }) {
       </div>
       <div className="flex flex-col p-4 flex-1">
         <h3 className="font-semibold text-lg mb-1 text-dark-text">{title}</h3>
-        <p className="text-placeholder text-sm flex-1 whitespace-pre-line">{description}</p>
+        <p className="text-dark-text text-sm flex-1 whitespace-pre-line">{description}</p>
       </div>
     </a>
   );
