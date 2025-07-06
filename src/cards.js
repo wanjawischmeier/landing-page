@@ -9,19 +9,19 @@ const cards = [
     image: "/Bewegungsglossar_Thumbnail.png",
     title: "Bewegungsglossar",
     description: "Unser gemeinsam mit der Agentur für politische Arbeit erstelltes Glossar.\n\nEs enthält eine stets wachsenden Sammlung an Begriffen aus aktivistischen Kontexten.",
-    url: "https://wiki.aktivismus.org/",
+    url: "https://glossar.aktivismus.org/",
   },
   {
     image: "/Bewegungskalender_Thumbnail.png",
     title: "Bewegungskalender",
     description: "🫂 Wir sind eine kleine Gruppe von Menschen aus verschiedenen emanzipatorischen sozialen Bewegungen - und verstehen uns als Teil dieser.\n\n💭 Unser gemeinsames Ziel ist die soziale und ökologische Transformation und damit die Überwindung von Diskriminierung und Ausbeutung.",
-    url: "https://wiki.aktivismus.org/",
+    url: "https://kalender.aktivismus.org/",
   },
   {
     image: "/Zine_Arranger_Thumbnail.png",
     title: "Zine Arranger",
     description: "Werkzeug zum Erstellen von Zines. Wandle einfach eine mehrseitige existierende PDF in ein Zine um!\n\nBasierend auf diesem Projekt von romadox:\nhttps://github.com/romadox/zine-arranger",
-    url: "https://wiki.aktivismus.org/",
+    url: "https://zines.aktivismus.org/",
   },
 ];
 

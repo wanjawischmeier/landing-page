@@ -4,8 +4,8 @@ import Header from "./widgets/Header";
 import MastodonTimelineWidget from "./widgets/MastodonTimelineWidget";
 import GridView from "./widgets/GridView";
 import AboutUs from "./widgets/AboutUs";
-import cards from "./Cards";
-import navLinks from "./widgets/navLinks";
+import cards from "./cards";
+import navLinks from "./navLinks";
 
 const ROOT_URL = "/";
 const APP_NAME = "aktivistek";
