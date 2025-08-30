@@ -1,5 +1,11 @@
 A simple landing page for aktivistek.org using React.
 
+### Sections
+- **Projects** (a list of projects an their respective descriptions and thumbnails)
+- **About Us** in multiple collapsable sections
+- **Gitlab** and **Contact** links
+- **Ticker** embedding (from ticker.aktivismus.org)
+
 <table>
   <tr>
     <td align="center"><strong>Desktop</strong></td>
