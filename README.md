@@ -4,7 +4,7 @@ A simple landing page for [aktivismus.org](https://aktivismus.org) using React.
 - **Projects** (a list of projects an their respective descriptions and thumbnails)
 - **About Us** in multiple collapsable sections
 - **Gitlab** and **Contact** links
-- **Ticker** embedding (from ticker.aktivismus.org)
+- **Ticker** embedding (from [ticker.aktivismus.org](https://ticker.aktivismus.org))
 
 <table>
   <tr>
