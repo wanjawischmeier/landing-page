@@ -1,4 +1,4 @@
-A simple landing page for aktivismus.org using React.
+A simple landing page for [aktivismus.org](https://aktivismus.org) using React.
 
 ### Sections
 - **Projects** (a list of projects an their respective descriptions and thumbnails)
