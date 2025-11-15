@@ -87,7 +87,21 @@ function AccordionSection({ title, content, expanded, onClick }) {
         aria-expanded={expanded}
         style={{ transitionProperty: 'background, color, box-shadow, transform' }}
       >
-        {title}
+        <div className="flex justify-between items-center">
+          {title}
+          <svg
+            className={`transition-transform duration-150 ${expanded ? 'rotate-180' : ''
+              }`}
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
       </button>
       <div
         className="overflow-hidden transition-all duration-150"
