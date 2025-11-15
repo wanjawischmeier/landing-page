@@ -66,7 +66,7 @@ function App() {
                 }
               />
               <Route
-                path="/about"
+                path="/about/:section?"
                 element={<AboutUs mode={mode} />}
               />
               <Route path="*" element={<Navigate to="/" />} />

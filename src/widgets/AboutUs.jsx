@@ -1,8 +1,10 @@
 import { useState, useRef, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 
 const sections = [
   {
-    title: 'Wer wir sind und was wir machen',
+    title: 'Unser Kollektiv',
+    slug: 'us',
     content: (
       <p className="text-dark-text">
         Wir sind eine Gruppe von Menschen aus unterschiedlichen Kontexten in der Bewegung die sich zusammengeschlossen haben, um linkes Wissen zu sammeln und für alle emanzipatorischen Bewegungen zugänglich zu machen.
@@ -19,6 +21,7 @@ const sections = [
   },
   {
     title: 'Mitmachen',
+    slug: 'join',
     content: (
       <p className="text-dark-text">
         Du teilst unsere Vision und willst helfen, Wissen zugänglich zu machen und Hierarchien abzubauen? Dann mach dir einen Account und teile dein Wissen!
@@ -32,6 +35,7 @@ const sections = [
   },
   {
     title: 'Moderation',
+    slug: 'moderation',
     content: (
       <p className="text-dark-text">
         Wir haben festgelegt, dass Inhalte die sich auf Gewalt gegen Menschen oder Sachen beziehen, dazu anleiten oder aufrufen, von uns gelöscht werden.
@@ -44,6 +48,7 @@ const sections = [
   },
   {
     title: 'Spenden',
+    slug: 'donations',
     content: (
       <p className="text-dark-text">
         Wir sind für unsere Arbeit auf Spenden angewiesen. Besonders freuen wir uns, wenn Orgas uns auf kontinuierlicher Basis finanzieren. Schreibt uns dafür gerne eine E-Mail.
@@ -115,8 +120,10 @@ function AccordionSection({ title, content, expanded, onClick }) {
   );
 }
 
+
 export default function AboutUs({ mode }) {
-  const [openIndex, setOpenIndex] = useState(0);
+  const { section } = useParams();
+  const [openIndex, setOpenIndex] = useState(section);
 
   const isMobile = mode === "mobile";
 
@@ -138,8 +145,8 @@ export default function AboutUs({ mode }) {
             key={section.title}
             title={section.title}
             content={section.content}
-            expanded={openIndex === idx}
-            onClick={() => setOpenIndex(idx)}
+            expanded={openIndex === section.slug || openIndex === idx}
+            onClick={() => setOpenIndex((section.slug || openIndex === idx) ? null : idx)}
           />
         ))}
       </div>
