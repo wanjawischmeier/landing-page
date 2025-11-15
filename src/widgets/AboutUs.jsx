@@ -33,13 +33,13 @@ const sections = [
   {
     title: 'Moderation',
     content: (
-        <p className="text-dark-text">
-            Wir haben festgelegt, dass Inhalte die sich auf Gewalt gegen Menschen oder Sachen beziehen, dazu anleiten oder aufrufen, von uns gelöscht werden.
-            Das tun wir vor allem zu unserer eigenen und der Sicherheit der Menschen, die das einpflegen 
-            (Alle Aktivitäten auf dieser Seite sind völlig öffentlich - inklusive Nutzername der Personen -  wir loggen jedoch keine IP-Adressen).
-            Über Lock-Ons, Barrikadenbau, Sitzblockaden und ähnliches was Teil zivilen Ungehorsams ist, sind wir noch unschlüssig, behalten uns aber vor, 
-            das mit in die Kriterien aufzunehmen und im Einzelfall zu entscheiden.
-        </p>
+      <p className="text-dark-text">
+        Wir haben festgelegt, dass Inhalte die sich auf Gewalt gegen Menschen oder Sachen beziehen, dazu anleiten oder aufrufen, von uns gelöscht werden.
+        Das tun wir vor allem zu unserer eigenen und der Sicherheit der Menschen, die das einpflegen
+        (Alle Aktivitäten auf dieser Seite sind völlig öffentlich - inklusive Nutzername der Personen -  wir loggen jedoch keine IP-Adressen).
+        Über Lock-Ons, Barrikadenbau, Sitzblockaden und ähnliches was Teil zivilen Ungehorsams ist, sind wir noch unschlüssig, behalten uns aber vor,
+        das mit in die Kriterien aufzunehmen und im Einzelfall zu entscheiden.
+      </p>
     ),
   },
 ];
