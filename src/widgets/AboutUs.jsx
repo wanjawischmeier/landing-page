@@ -42,6 +42,23 @@ const sections = [
       </p>
     ),
   },
+  {
+    title: 'Spenden',
+    content: (
+      <p className="text-dark-text">
+        Wir sind für unsere Arbeit auf Spenden angewiesen. Besonders freuen wir uns, wenn Orgas uns auf kontinuierlicher Basis finanzieren. Schreibt uns dafür gerne eine E-Mail.
+        <br></br>
+        <br></br>
+        Aktuell könnt ihr uns foglend spenden:
+        <br></br>
+        Bildungs-/Aktionsnetzwerk Wandel e.V.
+        <br></br>
+        DE48430609674120820302
+        <br></br>
+        Betreff: "Spende MovementWiki"
+      </p>
+    ),
+  },
 ];
 
 function AccordionSection({ title, content, expanded, onClick }) {
@@ -60,7 +77,7 @@ function AccordionSection({ title, content, expanded, onClick }) {
     <div className="mb-2">
       <button
         className={`
-          w-full text-left text-xl font-semibold py-2 px-2 rounded transition-colors 
+          w-full text-left text-xl font-semibold py-2 px-2 rounded transition-colors
           duration-150
           ${expanded ? 'bg-dark-card text-dark-text shadow-2xl' : 'bg-dark-grid text-dark-text/75'}
           hover:bg-dark-card hover:text-white hover:shadow-2xs
