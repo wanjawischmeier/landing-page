@@ -146,7 +146,7 @@ export default function AboutUs({ mode }) {
             title={section.title}
             content={section.content}
             expanded={openIndex === section.slug || openIndex === idx}
-            onClick={() => setOpenIndex((section.slug || openIndex === idx) ? null : idx)}
+            onClick={() => setOpenIndex((openIndex === section.slug || openIndex === idx) ? null : idx)}
           />
         ))}
       </div>
